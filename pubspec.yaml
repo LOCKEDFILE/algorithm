@@ -1,0 +1,8 @@
+name: algorithm
+description: algorithm by hj
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  collection: any
