@@ -5,7 +5,5 @@ void main() {
   print(getSingleNumber([4, 1, 2, 1, 2]) == 4);
 }
 
-getSingleNumber(List nums) {
-  Set sets = nums.toSet();
-  return sets.where((e) => nums.where((k) => k == e).length == 1).first;
-}
+getSingleNumber(List nums) =>
+    nums.toSet().firstWhere((e) => nums.where((k) => k == e).length == 1);
